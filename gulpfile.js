@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const del = require('del');
-const deploy = require('gulp-gh-pages');
+const ghpages = require('gh-pages');
 const sync = require('browser-sync');
 
 // Clean
@@ -74,9 +74,7 @@ gulp.task('build', gulp.series(
 // Push build to gh-pages
 
 gulp.task('deploy', function () {
-    return gulp
-        .src('dist/**/*')
-        .pipe(deploy());
+    return ghpages.publish('dist', function(err) {});
 });
 
 // Start

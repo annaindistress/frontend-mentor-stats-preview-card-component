@@ -2,14 +2,15 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "deploy": "gulp deploy"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-postcss": "^9.0.1",
     "postcss-csso": "^6.0.0",
     "postcss-import": "^14.1.0",
