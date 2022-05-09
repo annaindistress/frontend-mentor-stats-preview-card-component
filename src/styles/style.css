@@ -1,0 +1,25 @@
+/* Fonts */
+
+@import 'fonts.css';
+
+/* Components */
+
+@import 'components/box-sizing.css';
+@import 'components/visually-hidden.css';
+@import 'components/page.css';
+@import 'components/text.css';
+@import 'components/link.css';
+@import 'components/card.css';
+
+/* Variables */
+
+:root {
+    --color-black: hsl(233, 47%, 7%);
+    --color-blue: hsl(244, 38%, 16%);
+    --color-violet: hsl(277, 64%, 61%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-light: hsla(0, 0%, 100%, 0.75);
+    --color-white-dark: hsla(0, 0%, 100%, 0.6);
+    --font-main: 'Inter', sans-serif;
+    --font-additional: 'Lexend Deca', sans-serif;
+}

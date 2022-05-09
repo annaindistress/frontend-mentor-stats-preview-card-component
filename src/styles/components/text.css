@@ -1,0 +1,5 @@
+.text {
+    &-violet {
+        color: var(--color-violet);
+    }
+}

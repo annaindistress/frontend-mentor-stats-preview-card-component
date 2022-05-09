@@ -1,0 +1,10 @@
+.link {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-white);
+
+    &:hover,
+    &:focus {
+        color: var(--color-violet);
+    }
+}
