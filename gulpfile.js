@@ -74,7 +74,7 @@ gulp.task('build', gulp.series(
 // Push build to gh-pages
 
 gulp.task('deploy', function () {
-    return ghpages.publish('dist', function(err) {});
+    return ghpages.publish('dist');
 });
 
 // Start
