@@ -7,7 +7,7 @@
     padding: 0;
     font-family: var(--font-main);
     font-size: 15px;
-    line-height: 1.2;
+    line-height: 25px;
     color: var(--color-white-light);
     background-color: var(--color-black);
 
@@ -17,11 +17,11 @@
         justify-content: center;
         align-items: center;
         flex-grow: 1;
-        padding: 80px 25px;
+        padding: 24px;
     }
 
     &__footer {
-        padding: 20px 25px;
+        padding: 16px 24px;
         text-align: center;
         background-color: var(--color-blue);
     }

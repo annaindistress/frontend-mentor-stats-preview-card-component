@@ -2,9 +2,9 @@
     position: relative;
     width: 100%;
     max-width: 1110px;
-    padding: 35px 20px;
+    padding: 32px;
     background-color: var(--color-blue);
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
 
     @media (min-width: 1024px) {
@@ -29,10 +29,16 @@
     }
 
     &::before {
+        background-color: var(--color-violet);
+    }
+
+    &::after {
         background-image: url('../images/image-header-mobile.jpg');
         background-repeat: no-repeat;
         background-position: top left;
         background-size: auto 240px;
+        mix-blend-mode: multiply;
+        opacity: .75;
 
         @media (min-width: 375px) {
             background-size: 100% auto;
@@ -43,11 +49,6 @@
             background-position-x: right;
             background-size: auto 115%;
         }
-    }
-
-    &::after {
-        background-color: var(--color-violet);
-        opacity: .6;
     }
 
     &__container {
@@ -61,26 +62,26 @@
 
     &__title {
         margin: 0 0 16px;
-        font-size: 30px;
+        font-size: 28px;
+        line-height: 32px;
         text-align: center;
         color: var(--color-white);
 
         @media (min-width: 1024px) {
-            margin-bottom: 24px;
-            font-size: 34px;
+            margin-bottom: 25px;
+            font-size: 36px;
+            line-height: 44px;
             text-align: left;
         }
     }
 
     &__text {
-        margin: 0 10px 40px;
-        line-height: 1.7;
+        margin: 0 0 40px;
         text-align: center;
 
         @media (min-width: 1024px) {
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 75px;
+            margin-right: 40px;
+            margin-bottom: 72px;
             text-align: left;
         }
     }
@@ -101,7 +102,7 @@
     }
 
     &__list-item {
-        margin-bottom: 25px;
+        margin-bottom: 24px;
         text-align: center;
         color: var(--color-white-dark);
 
@@ -110,7 +111,7 @@
         }
 
         @media (min-width: 1024px) {
-            margin-right: 65px;
+            margin-right: 63px;
             margin-bottom: 0;
             text-align: left;
         }
@@ -118,16 +119,18 @@
 
     &__stat {
         display: block;
-        margin-bottom: 4px;
+        margin-bottom: 2px;
         font-weight: 700;
         font-size: 24px;
+        line-height: 29px;
         color: var(--color-white);
     }
 
     &__stat-desc {
         font-family: var(--font-additional);
         font-size: 12px;
-        letter-spacing: .1em;
+        line-height: 25px;
+        letter-spacing: 1px;
         text-transform: uppercase;
     }
 }
